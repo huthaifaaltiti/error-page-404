@@ -1,0 +1,129 @@
+/* base */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary-1: #fea377;
+  --color-primary-2: #ff7800;
+  --color-primary-light-1: #ffb590;
+  --color-primary-light-2: #ffc3a4;
+  --color-primary-light-3: #f58e5a;
+  --color-primary-light-4: #e78f63;
+
+  --color-grey-light-1: #e9ecef;
+  --color-grey-light-2: #dee2e6;
+  --color-grey-light-3: #ced4da;
+  --color-grey-light-4: #adb5bd;
+  --color-grey-light-5: #868e96;
+  --color-grey-light-6: #495057;
+
+  --color-grey-dark-1: #999;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #333;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light-1: 0 10px 10px -6px rgba(0, 0, 0, 0.3);
+  --shadow-light-2: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  --shadow-light-3: 0 1rem 2rem rgba(0, 0, 0, 0.02);
+
+  --font-primary: "Be Vietnam Pro", sans-serif;
+  --font-display-1: "Comfortaa", Display;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* main */
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../assets/images/5224474.jpg);
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.container-content {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.heading-1 {
+  font-size: 10rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.paragraph-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  text-align: center;
+}
+
+.back-home{
+  text-decoration: underline;
+
+  color: #E4C15B;
+
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+
+  display: flex;
+  gap: 3rem;
+}
+
+.svg-icon {
+  width: 4rem;
+  height: 4rem;
+
+  fill: #fff;
+
+  outline: 1px solid #fff;
+  outline-offset: 10px;
+
+  cursor: pointer;
+  transition: all .1s linear;
+}
+
+.svg-icon:hover {
+  fill: #E4C15B;
+
+  outline: 1px solid #E4C15B;
+}
